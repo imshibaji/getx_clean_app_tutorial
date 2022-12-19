@@ -11,7 +11,7 @@ class AppBarThemes {
   );
 
   static AppBarTheme dark = AppBarTheme(
-    backgroundColor: AppColors.sea.shade800,
+    backgroundColor: AppColors.sea.shade800.withAlpha(50),
     foregroundColor: AppColors.sea.shade50,
     elevation: 5,
     scrolledUnderElevation: 10,

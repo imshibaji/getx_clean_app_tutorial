@@ -1,4 +1,4 @@
-# getx_clean_app
+# Getx Clean Architecture Tutorials
 
 A new Flutter project.
 

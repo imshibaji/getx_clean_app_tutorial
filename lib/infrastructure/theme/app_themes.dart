@@ -22,7 +22,7 @@ class AppThemes {
     useMaterial3: true,
     colorScheme: const ColorScheme.dark(primary: AppColors.sea),
     appBarTheme: AppBarThemes.dark,
-    scaffoldBackgroundColor: AppColors.sea.shade900,
+    scaffoldBackgroundColor: AppColors.sea.shade900.withAlpha(100),
     floatingActionButtonTheme: AppFloatingButtonThemes.dark,
     switchTheme: AppSwitchThemes.dark,
   );

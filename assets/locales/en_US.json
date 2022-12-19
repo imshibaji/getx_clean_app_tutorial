@@ -1,0 +1,9 @@
+{
+    "welcome": "Welcome",
+    "button":{
+        "login":"Login",
+        "regiter": "Register",
+        "click": "Click",
+        "change_color": "Change Color"
+    }
+}
