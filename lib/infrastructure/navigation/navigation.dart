@@ -41,5 +41,20 @@ class Nav {
       page: () => SettingsScreen(),
       binding: SettingsControllerBinding(),
     ),
+    GetPage(
+      name: Routes.LOGIN,
+      page: () => LoginScreen(),
+      binding: LoginControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.REGISTER,
+      page: () => RegisterScreen(),
+      binding: RegisterControllerBinding(),
+    ),
+    GetPage(
+      name: Routes.FORGET,
+      page: () => ForgetScreen(),
+      binding: ForgetControllerBinding(),
+    ),
   ];
 }
