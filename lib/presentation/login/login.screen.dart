@@ -30,8 +30,8 @@ class LoginScreen extends GetView<LoginController> {
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 prefixIcon: Icon(Icons.person),
-                hintText: 'Input Username',
-                labelText: 'Username',
+                hintText: 'Input email address',
+                labelText: 'Username / Email',
               ),
             ),
             const SizedBox(
@@ -50,7 +50,11 @@ class LoginScreen extends GetView<LoginController> {
                 ),
               ),
             ),
-            TextButton(onPressed: () {}, child: const Text('Forget')),
+            TextButton(
+                onPressed: () {
+                  Get.toNamed('/forget');
+                },
+                child: const Text('Forget Password?')),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -62,7 +66,9 @@ class LoginScreen extends GetView<LoginController> {
                 ),
                 Expanded(
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.toNamed('/register');
+                    },
                     child: const Text('Register'),
                   ),
                 )
