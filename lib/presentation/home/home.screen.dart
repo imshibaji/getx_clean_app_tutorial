@@ -78,6 +78,12 @@ class HomeScreen extends GetView<HomeController> {
               },
               child: const Text("Goto Settings Screen"),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed('/login');
+              },
+              child: const Text('Logout'),
+            )
           ],
         ),
       ),

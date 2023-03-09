@@ -19,19 +19,19 @@ class LoginScreen extends GetView<LoginController> {
             const SizedBox(
               height: 270,
             ),
-            const Text(
-              'Login Screen',
-              style: TextStyle(fontSize: 26),
+            Text(
+              'screen_login'.tr,
+              style: const TextStyle(fontSize: 26),
             ),
             const SizedBox(
               height: 10,
             ),
             TextFormField(
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.person),
+              decoration: InputDecoration(
+                border: const OutlineInputBorder(),
+                prefixIcon: const Icon(Icons.person),
                 hintText: 'Input email address',
-                labelText: 'Username / Email',
+                labelText: 'field_username'.tr,
               ),
             ),
             const SizedBox(
@@ -43,7 +43,7 @@ class LoginScreen extends GetView<LoginController> {
                 border: const OutlineInputBorder(),
                 prefixIcon: const Icon(Icons.security),
                 hintText: 'Input Password',
-                labelText: 'Password',
+                labelText: 'field_password'.tr,
                 suffixIcon: IconButton(
                   icon: const Icon(Icons.remove_red_eye),
                   onPressed: () {},
@@ -54,14 +54,14 @@ class LoginScreen extends GetView<LoginController> {
                 onPressed: () {
                   Get.toNamed('/forget');
                 },
-                child: const Text('Forget Password?')),
+                child: Text('button_forget_password'.tr)),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: const Text('Login'),
+                    child: Text('button_login'.tr),
                   ),
                 ),
                 Expanded(
@@ -69,7 +69,7 @@ class LoginScreen extends GetView<LoginController> {
                     onPressed: () {
                       Get.toNamed('/register');
                     },
-                    child: const Text('Register'),
+                    child: Text('button_register'.tr),
                   ),
                 )
               ],

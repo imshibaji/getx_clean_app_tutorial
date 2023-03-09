@@ -1,9 +1,24 @@
 {
     "welcome": "Welcome",
+    "field": {
+        "username" : "Username / Email",
+        "password" : "Password",
+        "fullname": "Full name",
+        "email": "Email Address"
+    },
+    "screen": {
+        "login": "Login Screen",
+        "home": "Home Screen",
+        "register": "Register Screen",
+        "forget": "Password Recovery Screen"
+    },
     "button":{
         "login":"Login",
-        "regiter": "Register",
+        "register": "Register",
         "click": "Click",
-        "change_color": "Change Color"
+        "change_color": "Change Color",
+        "forget_password": "Forget Password?",
+        "reset_password": "Reset Password",
+        "logout": "Logout"
     }
 }

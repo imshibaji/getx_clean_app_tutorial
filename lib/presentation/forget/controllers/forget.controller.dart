@@ -1,8 +1,6 @@
 import 'package:get/get.dart';
 
 class ForgetController extends GetxController {
-  //TODO: Implement ForgetController
-
   final count = 0.obs;
   @override
   void onInit() {

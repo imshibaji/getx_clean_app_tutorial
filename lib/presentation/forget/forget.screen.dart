@@ -11,7 +11,7 @@ class ForgetScreen extends GetView<ForgetController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ForgetScreen'),
+        title: Text('screen_forget'.tr),
         centerTitle: true,
       ),
       body: Padding(
@@ -20,19 +20,19 @@ class ForgetScreen extends GetView<ForgetController> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text(
-              'ForgetScreen',
-              style: TextStyle(fontSize: 20),
+            Text(
+              'screen_forget'.tr,
+              style: const TextStyle(fontSize: 20),
             ),
             const SizedBox(
               height: 8,
             ),
             TextFormField(
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.person),
+              decoration: InputDecoration(
+                border: const OutlineInputBorder(),
+                prefixIcon: const Icon(Icons.person),
                 hintText: 'Input Email',
-                labelText: 'Username / Email',
+                labelText: 'field_username'.tr,
               ),
             ),
             const SizedBox(
@@ -40,7 +40,7 @@ class ForgetScreen extends GetView<ForgetController> {
             ),
             ElevatedButton(
               onPressed: () {},
-              child: const Text('Reset Password'),
+              child: Text('button_reset_password'.tr),
             ),
           ],
         ),

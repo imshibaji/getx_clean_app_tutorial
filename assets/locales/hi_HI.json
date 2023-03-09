@@ -1,9 +1,24 @@
 {
     "welcome": "स्वागत",
+    "field": {
+        "username" : "उपयोगकर्ता नाम / ईमेल",
+        "password" : "पासवर्ड",
+        "fullname": "पूरा नाम",
+        "email": "मेल पता"
+    },
+    "screen": {
+        "login": "लॉगिन स्क्रीन",
+        "home": "होम स्क्रीन",
+        "register": "रजिस्टर स्क्रीन",
+        "forget": "पासवर्ड रिकवरी स्क्रीन"
+    },
     "button":{
         "login":"लॉग इन करें",
-        "regiter": "पंजीकरण करवाना",
+        "register": "पंजीकरण करवाना",
         "click": "क्लिक",
-        "change_color": "रंग बदलना"
+        "change_color": "रंग बदलना",
+        "forget_password": "पासवर्ड भूल गए?",
+        "reset_password": "पासवर्ड रीसेट",
+        "logout": "लॉग आउट"
     }
 }

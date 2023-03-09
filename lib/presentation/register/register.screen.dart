@@ -11,7 +11,7 @@ class RegisterScreen extends GetView<RegisterController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('RegisterScreen'),
+        title: Text('screen_register'.tr),
         centerTitle: true,
       ),
       body: Padding(
@@ -19,30 +19,30 @@ class RegisterScreen extends GetView<RegisterController> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              'Register',
-              style: TextStyle(fontSize: 20),
+            Text(
+              'screen_register'.tr,
+              style: const TextStyle(fontSize: 20),
             ),
             const SizedBox(
               height: 10,
             ),
             TextFormField(
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.face),
+              decoration: InputDecoration(
+                border: const OutlineInputBorder(),
+                prefixIcon: const Icon(Icons.face),
                 hintText: 'Input Full name',
-                labelText: 'Full name',
+                labelText: 'field_fullname'.tr,
               ),
             ),
             const SizedBox(
               height: 10,
             ),
             TextFormField(
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.person),
+              decoration: InputDecoration(
+                border: const OutlineInputBorder(),
+                prefixIcon: const Icon(Icons.person),
                 hintText: 'Input Email',
-                labelText: 'Email Id',
+                labelText: 'field_email'.tr,
               ),
             ),
             const SizedBox(
@@ -54,7 +54,7 @@ class RegisterScreen extends GetView<RegisterController> {
                 border: const OutlineInputBorder(),
                 prefixIcon: const Icon(Icons.security),
                 hintText: 'Input Password',
-                labelText: 'Password',
+                labelText: 'field_password'.tr,
                 suffixIcon: IconButton(
                   icon: const Icon(Icons.remove_red_eye),
                   onPressed: () {},
@@ -66,7 +66,7 @@ class RegisterScreen extends GetView<RegisterController> {
             ),
             ElevatedButton(
               onPressed: () {},
-              child: const Text('Register now'),
+              child: Text('button_register'.tr),
             ),
           ],
         ),
